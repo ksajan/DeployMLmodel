@@ -5,10 +5,10 @@ from flask import Flask, request, render_template, url_for
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.externals import joblib
+import joblib
 
 # Iitiated flask instance
-app = (__Flask__)
+app = Flask(__name__)
 
 #home directory file to render index html file
 @app.route('/')
