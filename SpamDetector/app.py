@@ -13,7 +13,7 @@ app = Flask(__name__)
 #home directory file to render index html file
 @app.route('/')
 def home():
-    return "Testing debug option."         #render_template('home.html')
+    return render_template('home.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
