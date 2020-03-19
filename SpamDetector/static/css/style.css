@@ -1,10 +1,14 @@
-body {
+.leg {
     background-color: #f73;
+    margin: 10px;
+    color: #000;
+    font: monospace;
 }
 
 .subtitle {
     font-family: monospace;
-    color: #777;
+    color: #000;
+    font: monospace;
 }
 
 header{
