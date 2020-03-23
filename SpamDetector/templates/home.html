@@ -4,23 +4,26 @@
         <title class="title">My First ML Web APP</title>
         <link rel="stylesheet" type= "text/css" href="../static/css/style.css">
     </head>
-    <header class="">
-        <div class=""></div>
-            <div class="">
+    <body>
+    <header>
+        <div class="top-"></div>
+            <div class="heading">
                 ML Web APP
             </div>
         <h2>My First ML Web APP</h2>
         </div>
     </header>
-    
-    <body>
         <div class="leg">
             <h2 class="subtitle">Youtube spam Detector</h2>
         </div>
-        <form>
+    <div class="container">
+        <form action="{{ url_for('predict')}}" method="POST">
+            <p>Enter your container</p>
             <label for="Search"></label>
             <textarea id="search" name="search" rows="10" cols="80"></textarea>
+            <br>
             <input type="submit" name="q" id="">
         </form>
+    </div>
     </body>
 </html>
